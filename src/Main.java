@@ -19,8 +19,6 @@ public class Main {
         curso2.setCargaHoraria(4);
         curso2.calculaXp();
 
-
-
         Mentoria mentoria1 =new Mentoria();
         mentoria1.setTitulo("mentoriaJava");
         mentoria1.setDescricao("Mentoria de Java");
@@ -42,11 +40,13 @@ public class Main {
         bootcamp1.getConteudos().add(curso1);
         bootcamp1.getConteudos().add(curso2);
         bootcamp1.getConteudos().add(mentoria1);
+        bootcamp1.getConteudos().add(mentoria2);
 
         Dev devVictor = new Dev();
         devVictor.setNome("victor");
         devVictor.increverBootcamp(bootcamp1);
-        System.out.println("Conteudos inscritos "+ devVictor.getConteudoInscrito());
+        System.out.println("Conteudos inscritos Victor"+ devVictor.getConteudoInscrito());
+        devVictor.progredir();
         devVictor.progredir();
         devVictor.progredir();
         devVictor.progredir();
@@ -59,7 +59,7 @@ public class Main {
         Dev devMaria = new Dev();
         devMaria.setNome("Maria");
         devMaria.increverBootcamp(bootcamp1);
-        System.out.println("Conteudos inscritos "+ devMaria.getConteudoInscrito());
+        System.out.println("Conteudos inscritos Maria"+ devMaria.getConteudoInscrito());
         devMaria.progredir();
         System.out.println("Conteudos inscritos "+ devMaria.getConteudoInscrito());
         System.out.println("Conteudos concluidos "+ devMaria.getConteudoConcluido());
