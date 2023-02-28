@@ -17,14 +17,15 @@ public class Mentoria extends Conteudo{
     @Override
     public String toString() {
         return "Mentoria{" +
-                "titulo = " + getTitulo() +
-                "descricao = " + getDescricao() +
+                "titulo = " + getTitulo() + " , "+
+                "descricao = " + getDescricao() + " , "+
                 "data=" + data +
                 '}';
     }
 
     @Override
     public double calculaXp() {
+        double xp = XP_PADRAO + 20 ;
         return 0;
     }
 }

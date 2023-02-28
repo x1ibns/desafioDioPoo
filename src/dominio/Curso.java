@@ -14,14 +14,15 @@ public class Curso extends Conteudo{
     @Override
     public String toString() {
         return "Curso{" +
-                "titulo = " + getTitulo() +
-                "descricao = " + getDescricao() +
-                "cargaHoraria= " + cargaHoraria +
+                "titulo = " + getTitulo() + " , " +
+                "descricao = " + getDescricao() + " , " +
+                "cargaHoraria= " +getCargaHoraria() +
                 '}';
     }
 
     @Override
     public double calculaXp() {
+        double xp = XP_PADRAO * cargaHoraria;
         return 0;
     }
 }
