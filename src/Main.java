@@ -54,7 +54,7 @@ public class Main {
         System.out.println("Conteudos concluidos "+ devVictor.getConteudoConcluido());
         System.out.println("Total de XP " + devVictor.calcularTotalXp());
 
-        System.out.println("-------------------");
+        System.out.println("----------------------");
 
         Dev devMaria = new Dev();
         devMaria.setNome("Maria");
