@@ -11,6 +11,7 @@ public class Dev {
     private Set <Conteudo> conteudoConcluido = new LinkedHashSet<>();
     public void increverBootcamp(Bootcamp bootcamp){
         this.conteudoInscrito.addAll(bootcamp.getConteudos());
+        bootcamp.devsInscritos.add(this);
     }
     public void progredir(){
         Optional<Conteudo> conteudo = this.conteudoInscrito.stream().findFirst();
